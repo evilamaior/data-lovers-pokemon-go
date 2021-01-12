@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <title>POKÉMON GO</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Niramit|Pacifico" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <header>
+    <nav class="navegation">
+      <img src="imagens/banner/logo.png">
+      <ul>
+        <li><a href="#">POKÉMONS</a></li>
+        <li><a href="eggs.html">OVOS</a></li>
+        <li><a href="spawn.html">QUANDO ENCONTRAR</a></li>
+      </ul>
+    </nav>
+    <img class="imagem-header" src="imagens/banner/header.jpg">
+  </header>
+
+  <aside>
+    <ul>
+      <li class="open-menu">ORDENAR</li>
+      <ul class="submenu">
+        <li onclick="orderBy('asc')">A - Z</li>
+        <li onclick="orderBy('dec')">Z - A</li>
+        <li onclick="openPoke()">NÚMERO</li>
+      </ul>
+      <li class="open-menu">FILTRAR</li>
+      <ul class="submenu">
+        <li onclick="openPoke('Water')">Água</li>
+        <li onclick="openPoke('Dragon')">Dragão</li>
+        <li onclick="openPoke('Electric')">Elétrico</li>
+        <li onclick="openPoke('Ghost')">Fantasma</li>
+        <li onclick="openPoke('Fire')">Fogo</li>
+        <li onclick="openPoke('Ice')">Gelo</li>
+        <li onclick="openPoke('Bug')">Inseto</li>
+        <li onclick="openPoke('Fighting')">Lutador</li>
+        <li onclick="openPoke('Normal')">Normal</li>
+        <li onclick="openPoke('Rock')">Pedra</li>
+        <li onclick="openPoke('Grass')">Planta</li>
+        <li onclick="openPoke('Psychic')">Psíquico</li>
+        <li onclick="openPoke('Ground')">Terra</li>
+        <li onclick="openPoke('Poison')">Venenoso</li>
+        <li onclick="openPoke('Flying')">Voador</li>
+      </ul>
+    </ul>
+  </aside>
+
+  <section class="container-cards" id="cards">
+    <section class="card">
+      <h3>Nome do pokemon</h3>
+      <img src="">
+      <h3>Altura</h3>
+      <h3>Peso</h3>
+      <h3>Candies</h3>
+      <button class="type-poke">Tipo</button>
+    </section>
+  </section>
+
+  <footer class="footer-information">
+    <p>
+      <center>Copyright &copy, Your Website 2019 </center>
+    </p>
+  </footer>
+
+  <script type="text/javascript" src="js/spawn.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
